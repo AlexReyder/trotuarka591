@@ -9,9 +9,8 @@ const onest = Onest({
 })
 
 export const metadata: Metadata = {
-	title: 'Строительство частных домов',
-	description:
-		'Строительство качественных домов в Краснодаре и по Краснодарскому краю с гарантией от 15 лет!',
+	title: 'Тротуарная плитка',
+	description: '  ',
 }
 
 export default function RootLayout({
