@@ -59,11 +59,8 @@ export const HeroSlider = () => {
 					style={{ backgroundImage: `url(${ImagesSrc.hero.slide1.src})` }}
 				>
 					<Typography variant='h1'>
-						Строительство <br />
-						дома под ключ
-					</Typography>
-					<Typography variant='h1_subheading'>
-						От фундамента до отделочных работ. Все заботы берём на себя.
+						Тротуарная плитка <br />
+						от производителя
 					</Typography>
 
 					<div className={cls.ButtonsBox}>
@@ -73,49 +70,6 @@ export const HeroSlider = () => {
 							onClick={() => setModalConsultOpen(true)}
 						/>
 						<LinkDefault to='#projects' text='Посмотреть проекты' />
-					</div>
-				</SwiperSlide>
-
-				<SwiperSlide
-					className={cls.Slide}
-					style={{ backgroundImage: `url(${ImagesSrc.hero.slide2.src})` }}
-				>
-					<Typography variant='h1'>
-						Построим <br />
-						комфорный дом
-					</Typography>
-					<Typography variant='h1_subheading'>
-						Стоимостью от 150 000 руб. за 1 кв.м.
-					</Typography>
-					<div className={cls.ButtonsBox}>
-						<PrimaryButton
-							text='Получить консультацию'
-							icon={<OkIcon fill='white' />}
-							onClick={() => setModalConsultOpen(true)}
-						/>
-						<LinkDefault to='#projects' text='Посмотреть проекты' />
-					</div>
-				</SwiperSlide>
-
-				<SwiperSlide
-					className={cls.Slide}
-					style={{ backgroundImage: `url(${ImagesSrc.hero.slide3.src})` }}
-				>
-					<Typography variant='h1'>
-						Онлайн <br />
-						калькулятор
-					</Typography>
-					<Typography variant='h1_subheading'>
-						Рассчитайте стоимость строительства Вашего будущего дома прямо
-						сейчас.
-					</Typography>
-					<div className={cls.ButtonsBox}>
-						<PrimaryButton
-							text='Получить консультацию'
-							icon={<OkIcon fill='white' />}
-							onClick={() => setModalConsultOpen(true)}
-						/>
-						<LinkDefault to='#calculator' text='Калькулятор' />
 					</div>
 				</SwiperSlide>
 			</Swiper>
