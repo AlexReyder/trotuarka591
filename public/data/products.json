@@ -1,0 +1,118 @@
+[
+	{
+		"id": 1,
+		"type": "TP",
+		"name": "Антик",
+		"price": "1200",
+		"priceColor": "1400",
+		"description": "123",
+		"size": "300x300x30",
+		"pallet": "123",
+		"colors": {
+			"grey": true,
+			"black": true,
+			"yellow": true,
+			"red": true,
+			"brown": true,
+			"blue": true
+		},
+		"images": {
+			"originals": [
+				["public/img/products/TP/Антик/1.jpg"],
+				["public/img/products/TP/Антик/2.jpg"],
+				["public/img/products/TP/Антик/3.jpg"],
+				["public/img/products/TP/Антик/4.jpg"]
+			],
+			"previews": [
+				["public/img/products/TP/Антик/previews/1.jpg"],
+				["public/img/products/TP/Антик/previews/2.jpg"],
+				["public/img/products/TP/Антик/previews/3.jpg"],
+				["public/img/products/TP/Антик/previews/4.jpg"]
+			]
+		},
+		"slug": "antik"
+	},
+	{
+		"id": 2,
+		"type": "TP",
+		"name": "Галька",
+		"price": "1200",
+		"priceColor": "1400",
+		"description": "фывф",
+		"size": "300x300x30",
+		"pallet": "12",
+		"colors": {
+			"grey": true,
+			"black": false,
+			"yellow": true,
+			"red": false,
+			"brown": true,
+			"blue": false
+		},
+		"images": {
+			"originals": [
+				["public/img/products/TP/Галька/1.jpg"],
+				["public/img/products/TP/Галька/2.jpg"],
+				["public/img/products/TP/Галька/3.jpg"]
+			],
+			"previews": [
+				["public/img/products/TP/Галька/previews/1.jpg"],
+				["public/img/products/TP/Галька/previews/2.jpg"],
+				["public/img/products/TP/Галька/previews/3.jpg"]
+			]
+		},
+		"slug": "galka"
+	},
+	{
+		"id": 3,
+		"type": "B",
+		"name": "Бордюр тонкий",
+		"price": "1400",
+		"priceColor": "1600",
+		"description": "123123",
+		"size": "123123",
+		"pallet": "123123",
+		"colors": {
+			"grey": true,
+			"black": true,
+			"yellow": true,
+			"red": true,
+			"brown": true,
+			"blue": true
+		},
+		"images": {
+			"originals": [["public/img/products/B/Бордюр тонкий/1.jpg"]],
+			"previews": [["public/img/products/B/Бордюр тонкий/previews/1.jpg"]]
+		},
+		"slug": "bordur-toknkiy"
+	},
+	{
+		"id": 4,
+		"type": "FP",
+		"name": "Готика",
+		"price": "1400",
+		"priceColor": "1200",
+		"description": "",
+		"size": "123",
+		"pallet": "123",
+		"colors": {
+			"grey": true,
+			"black": true,
+			"yellow": true,
+			"red": true,
+			"brown": true,
+			"blue": true
+		},
+		"images": {
+			"originals": [
+				["public/img/products/FP/Готика/1.jpg"],
+				["public/img/products/FP/Готика/2.jpg"]
+			],
+			"previews": [
+				["public/img/products/FP/Готика/previews/1.jpg"],
+				["public/img/products/FP/Готика/previews/2.jpg"]
+			]
+		},
+		"slug": "gotika"
+	}
+]

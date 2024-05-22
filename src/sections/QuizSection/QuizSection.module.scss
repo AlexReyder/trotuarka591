@@ -1,0 +1,54 @@
+.Quiz {
+	position: relative;
+	margin-top: 10rem;
+	overflow: hidden;
+	height: 100vh;
+
+	&::after {
+		content: '';
+		background-color: #fff;
+		width: 100%;
+		height: 65%;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.Decorative {
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@media only screen and (max-width: 46.5rem) {
+		font-size: 8.4rem;
+		top: -6px;
+	}
+
+	@media only screen and (max-width: 37.5rem) {
+		top: -41px;
+	}
+
+	@media only screen and (max-width: 30.375rem) {
+		top: -17px;
+		font-size: 6.4rem;
+	}
+
+	@media only screen and (max-width: 23.125rem) {
+		top: -17px;
+		font-size: 5.6rem;
+	}
+
+	@media only screen and (max-width: 19.875rem) {
+		top: -17px;
+		font-size: 4.9rem;
+	}
+}
+
+.Container {
+	height: 100%;
+	@media only screen and (max-width: 37.5rem) {
+		padding: 4.8rem 0;
+	}
+}

@@ -1,0 +1,32 @@
+.Heading {
+	// @media only screen and (max-width: 56.25rem) {
+	// 	margin-bottom: 6rem;
+	// }
+	margin: 0 !important;
+}
+
+.Container {
+	padding: 0 7rem !important;
+	@media only screen and (max-width: 25rem) {
+		padding: 4.8rem 0;
+	}
+}
+
+.Test {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+.Card {
+	// flex: 0 0 calc(50% - 32px);
+	// max-width: calc(50% - 32px);
+	margin: 32px 16px 0;
+	padding: 12px;
+	box-shadow: 0px 32px 32px rgba(31, 47, 70, 0.12);
+	border-radius: 20px;
+	@media only screen and (max-width: 40rem) {
+		max-width: calc(100% - 32px);
+		flex-basis: calc(100% - 32px);
+	}
+}

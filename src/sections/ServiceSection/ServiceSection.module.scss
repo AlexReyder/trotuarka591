@@ -1,0 +1,123 @@
+@-webkit-keyframes breath {
+	0% {
+		background-size: 105% auto;
+	}
+
+	50% {
+		background-size: 120% auto;
+	}
+
+	100% {
+		background-size: 105% auto;
+	}
+}
+
+.Services {
+	background-size: cover;
+}
+
+.Parent {
+	text-align: center;
+	background-image: none;
+	background-size: cover;
+	background-repeat: no-repeat;
+	-webkit-animation: breath 15s linear infinite;
+	animation: breath 15s linear infinite;
+}
+
+.Headings {
+	text-align: left;
+}
+
+.Wrapper {
+	display: inline-flex;
+	flex-direction: column;
+}
+
+.Container {
+	display: flex;
+	align-items: baseline;
+	justify-content: center;
+	gap: 3rem;
+	margin-top: 6rem;
+
+	&:not(:last-child) {
+		margin-bottom: 6rem;
+
+		@media only screen and (max-width: 37.5rem) {
+			margin-bottom: 0;
+		}
+	}
+
+	&:nth-child(1) {
+		align-self: flex-start;
+
+		@media only screen and (max-width: 37.5rem) {
+			align-self: center;
+		}
+	}
+
+	&:nth-child(3) {
+		align-self: flex-start;
+
+		@media only screen and (max-width: 37.5rem) {
+			align-self: center;
+		}
+	}
+
+	@media only screen and (max-width: 64rem) {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		justify-items: center;
+		row-gap: 2rem;
+	}
+
+	@media only screen and (max-width: 37.5rem) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 4rem;
+		margin-top: 4rem;
+	}
+}
+
+@media only screen and (max-width: 64rem) {
+	.FirstEl {
+		grid-column: 1 / end;
+		grid-row: 1/2;
+		justify-self: start;
+
+		@media only screen and (max-width: 37.5rem) {
+			justify-self: center;
+		}
+	}
+
+	.Divider {
+		grid-column: 1 / end;
+		grid-row: 2/3;
+		justify-self: center;
+	}
+
+	.SecondEl {
+		grid-column: 1 / end;
+		grid-row: 3 / end;
+		justify-self: end;
+
+		@media only screen and (max-width: 37.5rem) {
+			justify-self: center;
+		}
+	}
+}
+
+.OrderCall {
+	display: flex;
+	gap: 10px;
+	justify-content: end;
+}
+
+.Divider {
+	@media only screen and (max-width: 37.5rem) {
+		display: none;
+	}
+}

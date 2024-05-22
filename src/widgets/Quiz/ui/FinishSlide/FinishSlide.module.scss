@@ -1,0 +1,110 @@
+.Header {
+    padding: 4rem 4rem 1rem 4rem;
+
+    @media only screen and (max-width: 40.875rem) {
+        padding: 4rem 1rem 1rem 1rem;
+    }
+}
+
+.Title {
+    font-family: var(--font-family-headings);
+    font-weight: 400;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.Subtitle {
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.Body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 31rem) {
+        width: 90%;
+    }
+}
+
+.Controls {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+
+    @media only screen and (max-width: 31rem) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.Messanger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem 1.5rem;
+
+
+}
+
+.Messanger_active {
+    box-shadow: 0px 7px 27px 0 rgba(40, 40, 40, 0.1);
+
+    &>span {
+        font-weight: 500;
+    }
+}
+
+.Text {
+    font-family: var(--font-family-text);
+    font-weight: 400;
+    font-size: 1.6rem;
+    transition: font-weight 0.3s ease-out;
+}
+
+.MessangerIcon {
+    width: 8.4rem;
+    height: 8.4rem;
+}
+
+.Form {
+    text-align: center;
+}
+
+.Input {
+    background-color: #F2F4F9;
+    width: 80%;
+    padding: 2rem 3rem;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    font-family: var(--font-family-text);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--color-secondary);
+    transition: border 0.3s;
+    margin-bottom: 2.5rem;
+
+    &::placeholder {
+        font-family: var(--font-family-text);
+        font-weight: 400;
+        font-size: 1.6rem;
+        color: var(--color-secondary);
+    }
+
+    &:focus {
+        border-color: var(--color-primary);
+        outline: none;
+    }
+
+    @media only screen and (max-width: 31rem) {
+        width: 100%;
+    }
+}

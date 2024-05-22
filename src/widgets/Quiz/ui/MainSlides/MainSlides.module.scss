@@ -1,0 +1,243 @@
+.Question {
+	font-family: var(--font-family-headings);
+	font-weight: 700;
+	font-size: 2.8rem;
+	margin-bottom: 2rem;
+
+	@media only screen and (max-width: 32.5rem) {
+		font-size: 2rem;
+	}
+}
+
+.Answers {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	// grid-template-rows: repeat(2, 1fr);
+	justify-items: center;
+
+	@media only screen and (max-width: 29.625rem) {
+		grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+		gap: 1rem;
+	}
+}
+
+.List {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.List6 {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-items: flex-start;
+	gap: 2rem;
+
+	@media only screen and (max-width: 30.125rem) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.Answer {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+
+	& > img {
+		max-width: 280px;
+		width: 90%;
+		height: 100%;
+		border-radius: 12px;
+
+		@media only screen and (max-width: 29.5625rem) {
+			width: 100%;
+		}
+	}
+}
+
+.Choice {
+	font-family: var(--font-family-text);
+	font-weight: 500;
+	font-size: 1.6rem;
+	text-align: center;
+	margin-top: 0.5rem;
+
+	@media only screen and (max-width: 40rem) {
+		text-align: left;
+	}
+
+	@media only screen and (max-width: 32.5rem) {
+		// text-align: center;
+	}
+}
+
+.Header {
+	position: relative;
+	margin: 2rem 0;
+
+	@media only screen and (max-width: 18.75rem) {
+		margin: 0;
+	}
+}
+
+.Body {
+	padding: 1rem 4rem;
+
+	@media only screen and (max-width: 32.5rem) {
+		padding: 1rem;
+	}
+}
+
+.Content {
+	position: relative;
+}
+
+.TAContent {
+	flex-direction: row;
+	gap: 1.5rem;
+}
+
+.Header__title {
+	font-family: var(--font-family-text);
+	font-size: 400;
+	font-size: 2.4rem;
+	padding: 2rem 4rem;
+	width: 80%;
+
+	@media only screen and (max-width: 32.5rem) {
+		font-size: 1.8rem;
+	}
+
+	@media only screen and (max-width: 25rem) {
+		width: 100%;
+		padding: 2rem;
+	}
+}
+
+.Progress {
+	background-color: #d6dce9;
+	width: 100%;
+	height: 10px;
+}
+
+.Fraction {
+	display: inline-block;
+	position: relative;
+	top: -8px;
+	width: calc(100% / 6);
+	height: 10px;
+	background-color: var(--color-primary);
+	transition: all 0.3s;
+}
+
+.Indicator {
+	font-family: var(--font-family-text);
+	font-size: 2.8rem;
+	font-weight: 500;
+	position: absolute;
+	top: 50%;
+	right: 4rem;
+	transform: translateY(-50%);
+
+	@media only screen and (max-width: 25rem) {
+		position: relative;
+		transform: none;
+		text-align: center;
+		right: 0;
+	}
+}
+
+.Checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.Checkbox:checked ~ .ImgChecked {
+	opacity: 1;
+	visibility: visible;
+}
+
+.Checkbox:checked ~ .Answer > .Round::after {
+	opacity: 1;
+}
+
+.ImgChecked {
+	opacity: 0;
+	visibility: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 48px;
+	height: 48px;
+	border-top-left-radius: 12px;
+	border-bottom-right-radius: 12px;
+	background-color: var(--color-primary);
+	transition: opacity 0.3s ease-out;
+	& > svg {
+	}
+}
+.OkIcon {
+	width: 33px;
+	height: 26px;
+}
+.Navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 4rem;
+	margin-top: 2rem;
+	padding-bottom: 2rem;
+
+	@media only screen and (max-width: 20.625rem) {
+		padding: 0 1rem;
+	}
+
+	@media only screen and (max-width: 18.75rem) {
+		flex-direction: column-reverse;
+		margin-top: 0;
+		gap: 1rem;
+	}
+}
+
+.PrevBtn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--color-secondary);
+	width: 7.3rem;
+	height: 7.3rem;
+	border-radius: 50%;
+	transition: background-color 0.3s ease-out;
+
+	&:hover {
+		background-color: var(--color-primary);
+	}
+}
+
+.Round {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	border: 3px solid var(--color-secondary);
+	border-radius: 50%;
+	position: relative;
+
+	&::after {
+		content: '';
+		width: 12px;
+		height: 12px;
+		border-radius: 50%;
+		background-color: var(--color-primary);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0;
+		transition: opacity 0.3s ease-out;
+	}
+}

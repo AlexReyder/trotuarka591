@@ -1,0 +1,57 @@
+.Header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 7rem;
+	z-index: 2;
+
+	@media only screen and (max-width: 37.5rem) {
+		padding: 0 3rem;
+	}
+}
+
+.LogoBox {
+	position: relative;
+	height: 90px;
+	width: 210px;
+}
+
+.Logo {
+	height: 115px;
+	@media only screen and (max-width: 56.25rem) {
+		height: 90px;
+	}
+	@media only screen and (max-width: 25rem) {
+		height: 50px;
+	}
+}
+
+.Nav {
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+}
+
+.Communicate {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+
+	&__item {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+}
+
+.Icon {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+
+.Hamburger {
+	display: none;
+}

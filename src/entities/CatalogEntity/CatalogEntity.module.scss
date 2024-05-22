@@ -1,0 +1,135 @@
+.Wrapper {
+	display: flex;
+	align-items: flex-start;
+	gap: 2rem;
+	width: 100%;
+	height: 100%;
+	@media only screen and (max-width: 43.75rem) {
+		flex-direction: column;
+	}
+}
+
+.ImagesWrapper {
+	flex-basis: 60%;
+	@media only screen and (max-width: 43.75rem) {
+		flex-basis: 100%;
+		width: 100%;
+	}
+}
+.InfoWrapper {
+	flex-basis: 40%;
+	padding-left: 1rem;
+	@media only screen and (max-width: 43.75rem) {
+		flex-basis: 100%;
+		width: 100%;
+	}
+}
+
+.ProductName {
+	font-size: 3.2rem;
+	font-weight: 500;
+	margin-bottom: 2rem;
+}
+.preview {
+	position: relative;
+	border-radius: 16px;
+	overflow: hidden;
+	width: 100%;
+	height: 50%;
+	aspect-ratio: 4/3;
+	margin-bottom: 1rem;
+	cursor: pointer;
+}
+.small_previews {
+	width: 100%;
+	display: flex;
+	gap: 1rem;
+}
+
+.small__wrapper {
+	position: relative;
+	display: flex;
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+	width: calc(100% / 4);
+	// height: 10rem;
+	aspect-ratio: 4/3;
+	& > img {
+		border-radius: 10px;
+	}
+}
+
+.price {
+	font-size: 2.4rem;
+	// line-height: 26px;
+	font-weight: 700;
+	color: var(--color-text-black);
+	text-align: center;
+}
+
+.price__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 3rem;
+	width: 100%;
+}
+
+.price__tab {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.price__button {
+	border: none;
+	background-color: transparent;
+	font-size: 1.6rem;
+	color: var(--neutrals4);
+	border-bottom: 3px solid var(--neutrals4);
+}
+
+.status {
+	font-weight: 600;
+	line-height: 22px;
+	font-size: 16px;
+}
+.properties {
+	width: 100%;
+	margin-top: 12px;
+	margin-bottom: 2rem;
+	padding-top: 12px;
+	border-top: 1px solid var(--neutrals6);
+	color: var(--neutrals4);
+}
+
+.size,
+.pallet {
+	margin-bottom: 1rem;
+}
+
+.CTA__wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.CTA {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	font-size: 1.8rem;
+	font-weight: 500;
+	background-color: var(--color-primary);
+	color: var(--color-text-white);
+	padding: 1.5rem 3rem;
+	border-radius: 7px;
+	width: 80%;
+	justify-content: center;
+}
+
+.active {
+	color: var(--color-text-black) !important;
+	border-bottom: 3px solid var(--color-primary) !important;
+}

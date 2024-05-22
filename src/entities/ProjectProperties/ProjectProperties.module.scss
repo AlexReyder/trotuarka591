@@ -1,0 +1,26 @@
+.Propeties {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin-top: 2rem;
+}
+
+.Property {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+
+	&:last-child {
+		grid-column: span 2;
+	}
+}
+
+.Item {
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: var(--color-text-black);
+}
+
+.House__description {
+	margin: 1.5rem 0;
+}

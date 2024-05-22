@@ -1,0 +1,25 @@
+.Head {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.Title {
+	font-size: 2rem;
+	font-weight: 500;
+	color: var(--color-text-black);
+}
+
+.Text {
+	font-size: 1.8rem;
+	font-weight: 400;
+	color: var(--color-text-black);
+}
+
+.Img {
+	width: 10rem;
+	height: 10rem;
+	object-fit: cover;
+}

@@ -1,0 +1,24 @@
+.ModalInput {
+	background-color: transparent;
+	width: 80%;
+	padding: 1.5rem 3rem;
+	border: 3px solid #fff;
+	border-radius: 12px;
+	font-family: var(--font-family-text);
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #fff;
+	transition: border 0.3s;
+
+	&::placeholder {
+		font-family: var(--font-family-text);
+		font-weight: 400;
+		font-size: 1.6rem;
+		color: #fff;
+	}
+
+	&:focus {
+		border-color: #fff;
+		outline: none;
+	}
+}

@@ -1,0 +1,167 @@
+.Container {
+	height: 100vh;
+	position: relative;
+
+	@media only screen and (max-width: 25rem) {
+		padding: 4.8rem 0;
+	}
+}
+.Decorative {
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	@media only screen and (max-width: 46.5rem) {
+		font-size: 8.4rem;
+		top: -6px;
+	}
+
+	@media only screen and (max-width: 37.5rem) {
+		top: -41px;
+	}
+
+	@media only screen and (max-width: 30.375rem) {
+		top: -17px;
+		font-size: 6.4rem;
+	}
+
+	@media only screen and (max-width: 23.125rem) {
+		top: -17px;
+		font-size: 5.6rem;
+	}
+
+	@media only screen and (max-width: 19.875rem) {
+		top: -17px;
+		font-size: 4.9rem;
+	}
+}
+.Left {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 2rem;
+	padding: 6rem 6rem;
+	height: 80vh;
+	width: 100%;
+	background-color: #222;
+	position: relative;
+	border-top-left-radius: 36px;
+	border-bottom-left-radius: 36px;
+
+	&::after {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 0;
+		right: -8rem;
+		width: 8rem;
+		height: 100%;
+		background: linear-gradient(
+			to bottom right,
+			#222 51%,
+			#222 50%,
+			transparent 52%,
+			transparent 100%
+		);
+		@media only screen and (max-width: 56.25rem) {
+			background: linear-gradient(
+				to bottom right,
+				#222 50%,
+				#222 49%,
+				transparent 50%,
+				transparent 100%
+			);
+			height: 15rem;
+			top: 100%;
+			right: 0;
+			width: 100%;
+		}
+	}
+	@media only screen and (max-width: 56.25rem) {
+		height: 50%;
+		width: 100%;
+		border-top-right-radius: 24px;
+		border-bottom-left-radius: 0;
+		align-items: center;
+		justify-content: flex-end;
+	}
+}
+
+.Right {
+	padding-left: 8rem;
+	padding-top: 6rem;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1.5rem;
+	border-top-right-radius: 36px;
+	border-bottom-right-radius: 36px;
+	@media only screen and (max-width: 56.25rem) {
+		border-top-right-radius: 0;
+		border-bottom-left-radius: 24px;
+		padding-left: 0;
+	}
+}
+
+.Heading {
+	width: 100%;
+
+	& > h2 {
+		width: 100%;
+	}
+}
+
+.Wrapper {
+	width: 100%;
+	position: relative;
+	z-index: 5;
+	background-size: cover;
+	background-position: right center;
+	border-radius: 8px;
+	box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+	display: grid;
+	grid-template-columns: 40% 60%;
+	justify-items: center;
+	align-items: center;
+	transition: all 0.4s;
+	border-radius: 36px;
+	@media only screen and (max-width: 56.25rem) {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+}
+.PhoneContainer {
+	display: contents;
+}
+
+.ModalInput {
+	background-color: transparent;
+	width: 80%;
+	padding: 1.5rem 3rem;
+	border: 3px solid #fff;
+	border-radius: 12px;
+	font-family: var(--font-family-text);
+	font-weight: 400;
+	font-size: 1.6rem;
+	color: #fff;
+	transition: border 0.3s;
+
+	&::placeholder {
+		font-family: var(--font-family-text);
+		font-weight: 400;
+		font-size: 1.6rem;
+		color: #fff;
+	}
+
+	&:focus {
+		border-color: var(--color-primary);
+		outline: none;
+	}
+}

@@ -1,0 +1,308 @@
+.Typography {
+    color: #fff;
+}
+
+.Modal_heading {
+    font-family: var(--font-family-headings);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--color-secondary);
+}
+
+.Modal_subheading {
+    font-family: var(--font-family-text);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--color-secondary);
+
+    @media only screen and (max-width: 50rem) {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+.Link {
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #222;
+    line-height: 1;
+}
+
+.SliderBtn {
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: #fff;
+    line-height: 1;
+}
+
+
+.h1 {
+    font-family: var(--font-family-headings);
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+
+    @media only screen and (max-width: 56.25rem) {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 39rem) {
+        font-size: 6.4rem;
+    }
+
+    @media only screen and (max-width: 33.125rem) {
+        font-size: 4.8rem;
+    }
+
+    @media only screen and (max-width: 25rem) {
+        font-size: 3.6rem;
+    }
+
+    @media only screen and (max-width: 18.75rem) {
+        font-size: 3.2rem;
+    }
+}
+
+.h2 {
+    font-family: var(--font-family-headings);
+    font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    width: 70vw;
+
+    @media only screen and (max-width: 56.25rem) {
+        width: 100%;
+        font-size: 3.2rem;
+    }
+
+    @media only screen and (max-width: 37.5rem) {
+        font-size: 2.8rem;
+    }
+
+    @media only screen and (max-width: 25rem) {
+        font-size: 2.4rem;
+    }
+}
+
+.h3 {
+    font-family: var(--font-family-headings);
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+
+    @media only screen and (max-width: 56.25rem) {
+        font-size: 2.4rem;
+    }
+}
+
+.h2_subheading {
+    font-family: var(--font-family-text);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 37.5rem) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 25rem) {
+        font-size: 1.6rem;
+    }
+}
+
+.about_slogan {
+    font-size: 1.4rem;
+    font-size: 300;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+
+    @media only screen and (max-width: 37.5rem) {
+        margin-bottom: 2.5rem;
+    }
+}
+
+.QuoteBig {
+    font-size: 3.2rem;
+
+    @media only screen and (max-width: 56.25rem) {
+        font-size: 2.8rem;
+    }
+
+    @media only screen and (max-width: 37.5rem) {
+        font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: 28.5rem) {
+        font-size: 2rem;
+    }
+}
+
+.QuoteJob {
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+.h1_subheading {
+    font-family: var(--font-family-text);
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #ECECEC;
+    width: 70vw;
+    margin-bottom: 3rem;
+
+    @media only screen and (max-width: 56.25rem) {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 33.125rem) {
+        width: 100%;
+    }
+}
+
+.h2 {
+    color: yellow;
+}
+
+.service-btn {
+    font-family: var(--font-family-headings);
+    font-weight: 300;
+    font-size: 3.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    transition: color 0.3s;
+
+    &:hover {
+        color: var(--color-primary);
+    }
+
+    &>sup {
+        font-size: 2.4rem;
+        font-style: italic;
+    }
+
+    @media only screen and (max-width: 31.5rem) {
+        font-size: 2.8rem;
+    }
+
+    @media only screen and (max-width: 25rem) {
+        font-size: 2.4rem;
+    }
+
+    @media only screen and (max-width: 22.125rem) {
+        font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 19.1875rem) {
+        font-size: 1.8rem;
+    }
+}
+
+.service-link {
+    font-family: var(--font-family-text);
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--color-primary);
+    text-transform: uppercase;
+}
+
+.text {
+    font-family: var(--font-family-text);
+    color: #222;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.white {
+    color: var(--color-text-white)
+}
+
+.black {
+    color: var(--color-secondary)
+}
+
+.gold {
+    color: var(--color-primary)
+}
+
+.grey-disabled {
+    color: #6A6969;
+}
+
+.f300 {
+    font-weight: 300;
+}
+
+.f400 {
+    font-weight: 400;
+}
+
+.f500 {
+    font-weight: 500;
+}
+
+.f600 {
+    font-weight: 600;
+}
+
+.f700 {
+    font-weight: 700;
+}
+
+.s18 {
+    font-size: 1.8rem;
+}
+
+.s24 {
+    font-size: 2.4rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.SliderNavigation {
+    font-family: var(--font-family-text);
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    @media only screen and (max-width: 20.25rem) {
+        font-size: 1.4rem;
+    }
+}
+
+.decorative {
+    font-family: var(--font-family-headings);
+    font-size: 12.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #E7E7E7;
+}
+
+.Uppercase {
+    text-transform: uppercase;
+}
+
+.Lowercase {
+    text-transform: none;
+}

@@ -1,0 +1,17 @@
+.Breadcrumb {
+	display: flex;
+	align-items: center;
+	padding: 2rem 7rem;
+}
+
+.CurrentPage {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--color-text-grey);
+}
+
+.PrevPage {
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: var(--color-text-black);
+}

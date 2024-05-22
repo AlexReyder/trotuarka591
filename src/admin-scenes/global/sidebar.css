@@ -1,0 +1,19 @@
+.sidebar--exit {
+	height: 100vh;
+	/* min-width: 350px; */
+	transition: all 0.3s;
+}
+
+.sidebar--exit > ul {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.sidebar__btn {
+	border: none;
+}
+
+.ps-active {
+	color: var(--color-primary);
+}

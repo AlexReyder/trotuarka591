@@ -1,0 +1,140 @@
+.PrimaryButton {
+
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    min-width: 200px;
+    padding: 1.5rem 3rem;
+    border-radius: 65px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    padding-right: 7rem;
+    transition: transform 0.3s ease-out;
+
+    @media only screen and (max-width: 17.5625rem) {
+        min-width: 236px;
+    }
+
+    &>p {
+        margin: 0 auto;
+    }
+
+    &.White {
+        &>p {
+            color: var(--color-secondary);
+        }
+
+        &::after {
+            background-color: #fff;
+        }
+
+        @media(hover: hover) and (pointer: fine) {
+            &:hover {
+                &>p {
+                    color: #fff;
+                }
+            }
+        }
+
+    }
+
+    &.White-gold {
+        &::after {
+            background-color: var(--color-primary);
+        }
+
+        &::before {
+            background-color: #fff;
+        }
+
+        .IconContainer {
+            background-color: #fff;
+
+            &>svg {
+                fill: var(--color-primary);
+            }
+        }
+
+        &>p {
+            color: #fff;
+        }
+
+        @media(hover: hover) and (pointer: fine) {
+            &:hover {
+                &>p {
+                    color: var(--color-secondary);
+                }
+
+                .IconContainer {
+                    &>svg {
+                        fill: #fff;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-primary);
+        border-radius: 10rem;
+        z-index: -2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: var(--color-secondary);
+        transition: all .3s;
+        border-radius: 10rem;
+        z-index: -1;
+    }
+
+    @media(hover: hover) and (pointer: fine) {
+        &:hover {
+            &:before {
+                width: 100%;
+            }
+
+            .IconContainer {
+                background-color: var(--color-primary);
+            }
+        }
+    }
+
+
+
+
+
+}
+
+.IconContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    right: -1rem;
+    background-color: #222;
+    width: 7.3rem;
+    height: 7.3rem;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: background-color 0.3s;
+    transition-delay: 0.3s;
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://ariana-stroitelstvo.ru/
+
+# Sitemaps
+Sitemap: https://ariana-stroitelstvo.ru/sitemap.xml
